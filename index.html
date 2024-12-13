@@ -4,8 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        .nav-bar{
+
+            background-color: black;
+            color: white;
+            overflow: hidden;
+            width: 100%;
+            height: 50px;
+            padding-top: 20px;
+            
+        
+        }
+        .nav-bar a{
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            flex: 1;
+            align-items: center;
+        
+        }
+        .placeholder span{
+            font-size: 14px;
+            color: grey;
+            
+            
+
+        }
+
+        .section1{
+            background-color: skyblue;
+            border: 2px solid green ; 
+            padding-left: 20px;
+            height: 100px;
+        }
+
+
+
+    </style>
 </head>
 <body>
-    <h1>Section 1</h1>
+       <header>
+
+        <nav class="nav-bar">
+            
+            <div class="placeholder"><span>150x150</span></div>
+            <a href="#">Section 1</a>
+            <a href="#">Section 2</a>
+            <a href="#">Section 3</a>
+            <a href="#">Section 4</a>
+            <a href="#">Section 5</a>
+        </nav>
+    </header>
+
+    <section class="section1">
+        <h1>Single Column</h1>
+        
+        This uses a simple single-column layout. The content is centered and aligned in one block.
+    
+    </section>
 </body>
 </html>
