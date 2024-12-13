@@ -3,10 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Combined Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Section 2: Two-Column Layout */
+        .section-2 {
+            background-color: #f28d8d;
+        }
+
+        .section-2 h2 {
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .columns {
+            display: flex;
+            gap: 20px;
+        }
+
+        .column {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            flex: 1;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .column h3 {
+            margin-top: 0;
+        }
+
+        /* Section 4: Full Width with Text and Image */
+        .section-4 {
+            background-color: #93dbff;
+            display: flex;
+            align-items: center;
+        }
+
+        .section-4 .text {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .section-4 .image-placeholder {
+            width: 600px;
+            height: 400px;
+            background-color: #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #8b8b8b;
+        }
+    </style>
 </head>
 <body>
-<!--MARIOT SECTION 4-->
+    <!-- Section 2: Two-Column Layout -->
+    <div class="section section-2">
+        <h2>Section 2: Two-Column Layout</h2>
+        <div class="columns">
+            <div class="column">
+                <h3>Column 1</h3>
+                <p>This is the first column. You can place text, images, or other elements here.</p>
+            </div>
+            <div class="column">
+                <h3>Column 2</h3>
+                <p>This is the second column. It can contain any other content like text, media, etc.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 4: Full Width with Text and Image -->
     <div class="section section-4">
         <div class="text">
             <h2>Section 4: Full Width with Text and Image</h2>
@@ -14,38 +94,5 @@
         </div>
         <div class="image-placeholder">600 x 400</div>
     </div>
-<!--MARIOT SECTION 4-->
 </body>
-<!--MARIOT CSS SECTION 4-->
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-    }
-    .section {
-        padding: 20px;
-        margin-bottom: 20px;
-        border: 1px solid #ddd;
-    }
-    .section-4 {
-        background-color: #93dbff;
-        display: flex;
-        align-items: center;
-    }
-    .section-4 .text {
-        flex: 1;
-        padding-right: 20px;
-    }
-    .section-4 .image-placeholder {
-        width: 600px;
-        height: 400px;
-        background-color: #ccc;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #8b8b8b;
-    }
-</style>
-<!--MARIOT CSS SECTION 4-->
 </html>
