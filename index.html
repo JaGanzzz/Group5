@@ -3,28 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Two-Column Layout</title>
     <style>
-        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .section {
+            background-color: #f28d8d;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .columns {
+            display: flex;
+            gap: 20px;
+        }
+
+        .column {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            flex: 1;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .column h3 {
+            margin-top: 0;
+        }
     </style>
 </head>
 <body>
-    <!--Section 2-->
-    <div>
-        <Section>
-            <div>
-            <p>Section:2 two-column-loyout</p>
-        </div> 
-        <div>
-            <p>Column 1</p>
-            <p>this is the first column you can place,image, or other element here</p>
+    <div class="section">
+        <h2>Section 2: Two-Column Layout</h2>
+        <div class="columns">
+            <div class="column">
+                <h3>Column 1</h3>
+                <p>This is the first column. You can place text, images, or other elements here.</p>
+            </div>
+            <div class="column">
+                <h3>Column 2</h3>
+                <p>This is the second column. It can contain any other content like text, media, etc.</p>
+            </div>
         </div>
-        <div>
-            <p>Column 2</p>
-            <p>this is the first column you can place,image, or other element here</p>
-        </div>    
-        </Section>  
     </div>
-    
 </body>
 </html>
