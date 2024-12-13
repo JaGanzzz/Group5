@@ -3,9 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .gallery-section {
+            background-color: lightgreen;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: left;
+            width: 80%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: black;
+        }
+
+        .image-gallery {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .image-gallery .placeholder {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .placeholder span {
+            font-size: 14px;
+            color: grey;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="gallery-section">
+        <h2>Section 3:</h2>
+            <h2></h2> Image Gallery</h2>
+        <div class="image-gallery">
+            <div class="placeholder"><span>500 x 500</span></div>
+            <div class="placeholder"><span>500 x 500</span></div>
+            <div class="placeholder"><span>500 x 500</span></div>
+        </div>
+    </div>
 </body>
 </html>
